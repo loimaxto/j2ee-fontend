@@ -1,6 +1,7 @@
 import axios from 'axios';
-import { API_ENDPOINT as API_BASE_URL } from '../config/variable';
+import { API_ENDPOINT  } from '../config/variable';
 
+const API_BASE_URL = API_ENDPOINT + '/api/users';
 
 const UserService = {
     getAllUsers: async () => {
